@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bodyIndex{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: header;
+    display:flex;
+    border-radius: 0px 0px 452px 452px;
+    background: rgba(196, 210, 229, 0.67);
+    height: 6.25rem;
+    width:100%;
+    text-align: right;
+}
+.logoPrincipal{
+    margin-left: 8.25rem;
+    text-align: left;
+}
+.logoPrincipal img{
+    height: 7.5rem;
+}
+.navBar{
+    list-style: none;
+    padding-right: 2.5rem;
+    margin-top: -5rem;
+    padding-top: 0;
+}
+.navBar li{
+    display: inline;
+    padding: 1.25rem;
+}
+.navBar li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.mainIndex{
+    grid-area: main;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 31.25rem;
+    background-image: url("../assets/images/madejas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10%;
+}
+.mainIndex h1{
+    margin-left: 280px;
+    color: white;
+    width: 35rem;
+    text-align: center;
+    padding: 20rem 1.25rem 0rem;
+    font-family: Inter;
+    font-size: 10vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mainIndex h1 span{
+    font-weight: 700;
+}
+.bannerIndex{
+    align-items: center;
+}
+.indexSection{
+    background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
+    border-radius: 542.4px;
+    width: 100%;
+    margin-top: 3rem;
+    align-items: center;
+}
+.indexSection img{
+    height: 6rem;
+}
+.mainIndex h2 {
+    color: #A15C82;
+    text-align: center;
+    font-family: Inter;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.mainIndex li{
+    display: inline;
+}
+.mainIndex ul li a img{
+    width: 20rem;
+}
+.ofertas{
+    background-color: #000;
+}
+.ofertas ul{
+    list-style: none;
+}
+.indexSection h3{
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.indexSection span{
+    text-decoration-line: underline;
+}
+footer{
+    grid-area: footer;
+    background: #A3AEBE;
+    text-align: center;
+    width: 100%;
+}
+footer img{
+    height: 6rem;
+}
+footer nav a{
+    text-decoration: none;
+}
+.socialMedia img{
+    height: 3rem;
+}
+.mainNosotros{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 37.5rem;
+    background-image: url("../assets/images/estanteria.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10%;
+}
+.mainNosotros article{
+    align-content: center;
+}
+.mainNosotros h1{
+    margin-left: 300px;
+    color: white;
+    width: 35rem;
+    text-align: center;
+    padding: 20px;
+    font-family: Inter;
+    font-size: 10vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.nosotros{
+    width: 100%;
+}
+.nosotros article{
+    width: 50%;
+}
+.slideOfertas img{
+    height:6rem;
+    margin-top: 40rem;
+
+}
+.catalogoCard{
+    padding-top: 10rem;
+}
+.card{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 1px 1px .625rem black;
+    background-color: #CECBCB;
+    position: relative;
+    z-index: 1;
+    margin:0.3125rem;
+}
+.card div{
+    width: 100%;
+    height: 12.5rem;
+}
+.card div img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.cardContainer{
+    display: flex;   
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mainContact{
+    width: 100%;
+    background-color: #FFE9E9;
+    height: 37.5rem;
+    background-image: url("../assets/images/ovillos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    text-align: center;
+}
+.contactDatos{
+    text-align: left;
+    padding-top: 6.25rem;
+}
+    
+.mainContact h1{
+    margin-left: 40vh;
+    margin-top: 18.5rem;
+}
+form{
+    margin-left: 85vh;
+    text-align: left;
+}
+.fotoProducto img{
+    height:10rem;
+}
