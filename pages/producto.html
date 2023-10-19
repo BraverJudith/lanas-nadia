@@ -3,111 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link  rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>ver producto</title>
+    <title>Catalogo</title>
 </head>
-<body>
-    <header>
-        <section class="logoPrincipal"><img src="../assets/images/logo.png" alt="logo lanas nadia"><a href="../index.html"></a></section>
-        <nav class="navBar">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="../pages/catalogo.html">CATALOGO</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
+<body class="bodyIndex">
+    <header class="nav-wrapper">
+        <nav>
+            <div class="logoPrincipal"><a href="#"></a><img src="../assets/images/logo.png" alt="logo lanas nadia"></a></div>
+            <input type="checkbox" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul class="navBar">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="../pages/catalogo.html">CATALOGO</a></li>
+                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="fotoProducto">
-            <img src="../assets/images/algodon-estampado-madeja.jpg" alt="algodon Estampado">
-        </section>
-        <section>
-            <h2>NOMBRE DE PRODUCTOS</h2>
-            <p> DESCRIPCION Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ducimus facilis molestiae nihil explicabo cum ipsum perf </p>
-        </section>
-        <section class="catalogoCard">
-            <section class="cardContainer">
-                <article class="card">
-                    <div>
-                        <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
-                    </div>
-                    <h3>ALGODON 8/3</h3>
-                    <p>ELEMENTOS DEL ELEMENTO</p>
-                </article>
-                <article class="card">
-                    <div>
-                        <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
-                    </div>
-                    <h3>ALGODON 8/3</h3>
-                    <p>ELEMENTOS DEL ELEMENTO</p>
-                </article>
-                <article class="card">
-                    <div>
-                        <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
-                    </div>
-                    <h3>ALGODON</h3>
-                    <p>ELEMENTOS DEL ELEMENTO</p>
-                </article>
+        <div class="producto">
+            <section class="fotoProducto">
+                <img src="../assets/images/algodon-estampado-madeja.jpg" alt="algodon Estampado">
             </section>
-            <section class="cardContainer">
+            <section>
+                <h2>NOMBRE DE PRODUCTOS</h2>
+                <p> DESCRIPCION Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ducimus facilis molestiae nihil explicabo cum ipsum perf </p>
+            </section>
+        </div>
+        <div class="space"></div>
+        <section class="catalogoCard mt-4">
+            <section class="cardContainer row row-cols-3 row-cols-lg-4 g-4 mx-2">
+                <div class="col-12 col-sm-6">
+                <article class="card">
+                    <div class="justify-content-center">
+                        <a href="../pages/producto.html"><img class="img-fluid" src="../assets/images/madeja-azul.png" alt="Foto de madeja"></a>
+                    </div>
+                    <div class="textoHover">
+                        <a href="../pages/producto.html"><h3>NEVADA</h3><p>50% Lana 50% Acrilico</p></a>
+                    </div>
+                </article></div>
+                <div class="col-12 col-sm-6">
                 <article class="card">
                     <div>
-                        <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
+                        <a href="../pages/producto.html"><img class="img-fluid" src="../assets/images/madeja-coral.png" alt="Foto de madeja"></a>
                     </div>
-                    <h3>ALGODON 8/3</h3>
-                    <p>ELEMENTOS DEL ELEMENTO</p>
-                </article>
+                    <div class="textoHover">
+                        <a href="../pages/producto.html"><h3>JANA</h3><p>Acrílico 90% Poliamida 10%</p></a>
+                    </div>
+                </article></div>
+                <div class="col-12 col-sm-6 ">
                 <article class="card">
                     <div>
-                        <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
+                        <a href="../pages/producto.html"><img class="img-fluid" src="../assets/images/madeja-celeste.png" alt="Foto de madeja"></a>
                     </div>
-                    <h3>ALGODON 8/3</h3>
-                    <p>ELEMENTOS DEL ELEMENTO</p>
-                </article>
+                    <div class="textoHover">
+                        <a href="../pages/producto.html"><h3>PATAGONIA</h3><p>50% Lana 50% Acrilico</p></a>
+                    </div>
+                </article></div>
+                <div class="col-12 col-sm-6">
                 <article class="card">
                     <div>
-                        <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
+                        <a href="../pages/producto.html"><img class="img-fluid" src="../assets/images/madeja.png" alt="Foto de madeja"></a>
                     </div>
-                    <h3>ALGODON</h3>
-                    <p>ELEMENTOS DEL ELEMENTO</p>
-                </article>
+                    <div class="textoHover">
+                        <a href="../pages/producto.html"><h3>CASHMILON 8/3</h3><p>50% Lana 50% Acrilico</p></a>
+                    </div>
+                </article></div>
+                <div class="col-12 col-sm-6">
+                <article class="card">
+                    <div>
+                        <a href="../pages/producto.html"><img class="img-fluid" src="../assets/images/madeja-violeta.png" alt="Foto de madeja"></a>
+                    </div>
+                    <div class="textoHover">
+                        <a href="../pages/producto.html"><h3>BARILOCHE</h3><p>50% Lana 50% Acrilico</p></a>
+                    </div>
+                </article></div>
+                <div class="col-12 col-sm-6">
+                    <article class="card">
+                        <div>
+                            <a href="../pages/producto.html"><img class="img-fluid" src="../assets/images/algodon-estampado-madeja.jpg" alt="Foto de madeja"></a>
+                        </div>
+                        <div class="textoHover">
+                            <a href="../pages/producto.html"><h3>MECHALAN</h3><p>50% Lana 50% Acrilico</p></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <article class="card">
+                        <div>
+                            <a href="../pages/producto.html"><img class="img-fluid" src="../assets/images/delfi-grande.jpg" alt="Foto de madeja"></a>
+                        </div>
+                        <div class="textoHover">
+                            <a href="../pages/producto.html"><h3>DELFI</h3><p>50% Lana 50% Acrilico</p></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <article class="card">
+                        <div>
+                            <a href="../pages/producto.html"><img class="img-fluid" src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
+                        </div>
+                        <div class="textoHover">
+                            <a href="../pages/producto.html"><h3>ANGORINA</h3><p>75% Fibra Acrílica 25% Poliamida</p></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <article class="card">
+                        <div>
+                            <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
+                        </div>
+                        <div class="textoHover">
+                            <a href="../pages/producto.html"><h3>AMALFIL</h3><p>50% Lana 50% Acrilico</p></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <article class="card">
+                        <div>
+                            <a href="../pages/producto.html"><img src="../assets/images/madeja-coral.png" alt="Foto de madeja"></a>
+                        </div>
+                        <div class="textoHover">
+                            <a href="../pages/producto.html"><h3>MECHALAN</h3><p>50% Lana 50% Acrilico</p></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <article class="card">
+                        <div>
+                            <a href="../pages/producto.html"><img src="../assets/images/colorido.png" alt="Foto de madeja"></a>
+                        </div>
+                        <div class="textoHover">
+                            <a href="../pages/producto.html"><h3>MECHALAN MATIZADO</h3><p>50% Lana 50% Acrilico</p></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <article class="card">
+                        <div>
+                            <a href="../pages/producto.html"><img src="../assets/images/madeja-azul.png" alt="Foto de madeja"></a>
+                        </div>
+                        <div class="textoHover">
+                            <a href="../pages/producto.html"><h3>ACRILBLUE</h3><p>50% Lana 50% Acrilico</p></a>
+                        </div>
+                    </article>
+                </div>
+            </section> 
         </section>
-        <section class="cardContainer">
-            <article class="card">
-                <div>
-                    <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
-                </div>
-                <h3>ALGODON 8/3</h3>
-                <p>ELEMENTOS DEL ELEMENTO</p>
-            </article>
-            <article class="card">
-                <div>
-                    <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
-                </div>
-                <h3>ALGODON 8/3</h3>
-                <p>ELEMENTOS DEL ELEMENTO</p>
-            </article>
-            <article class="card">
-                <div>
-                    <a href="../pages/producto.html"><img src="../assets/images/algodon-83-madeja.jpg" alt="Foto de madeja"></a>
-                </div>
-                <h3>ALGODON</h3>
-                <p>ELEMENTOS DEL ELEMENTO</p>
-            </article>
-        </section>    
-    </section>
+    <a class="whatsapp" href="#"><img src="../assets/icons/whatsapp.png" alt="Contacto por whatsapp"></a>
     </main>
     <footer class="footer">
-        <div>
+        <div class="footerImg">
             <img src="../assets/images/mercado-pago-logo.png" alt="acepto mercado pago">
             <img src="../assets/images/envios-a-todo-el-pais.png" alt="envios a todo el pais">
         </div>
         <div>
-            <nav>
+            <nav class="menuFooter">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
+                    <li><a href="../index.html">INICIO</a></li>
                     <li><a href="../pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
                     <li><a href="../pages/catalogo.html">CATALOGO</a></li>
                     <li><a href="../pages/contacto.html">CONTACTO</a></li>
@@ -123,7 +184,6 @@
                 </ul>
             </nav>
         </div>
-    </footer>    
-    
+    </footer>  
 </body>
 </html>
