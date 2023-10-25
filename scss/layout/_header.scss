@@ -1,0 +1,42 @@
+header{
+    border-radius: 0px 0px 452px 452px;
+    background: rgba(196, 210, 229, 0.67);
+    height: 6.25rem;
+    width:100%;
+    position: absolute;
+    top:0;
+    nav{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        div{
+            margin-left: 8.25rem;
+            text-align: left;
+            a{
+                img{
+                    height: 7.5rem;
+                }
+            }
+        }
+        #toggle{
+            display: none;
+        }
+        label{
+            display:none;
+        }
+        div{
+            ul{
+               display: flex;
+               padding-right: 2.5rem;
+               gap: 1.25rem;
+               a{
+                color: rgba(77, 52, 102, 1);
+                font-size: 1rem;
+               }
+            }
+        }
+    }
+}

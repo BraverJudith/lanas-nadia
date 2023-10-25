@@ -1,0 +1,36 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: #A3AEBE;
+    text-align: center;
+    width: 100%;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        img{
+            height: 6rem;
+        }
+    }
+    div{
+        ul{
+            li{
+                padding: .625rem;
+                a{
+                    color:rgba(77, 52, 102, 1);
+                }
+            }
+        }
+    }
+    div{
+        nav{
+            ul{
+                li{
+                    a{
+                        img{height: 3rem;}
+                    }
+                }
+            }
+        }
+    }
+}

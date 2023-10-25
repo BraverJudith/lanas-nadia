@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    border-radius: 0px 0px 452px 452px;
+    background: rgba(196, 210, 229, 0.67);
+    height: 6.25rem;
+    width:100%;
+    position: absolute;
+    top:0;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Young Serif', serif;
+    width: 100%;
+    min-height: 100vh;
+    background: #FFE9E9;
+}
+.nav-wrapper nav{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.logoPrincipal{
+    margin-left: 8.25rem;
+    text-align: left;
+}
+.logoPrincipal img{
+    height: 7.5rem;
+}
+.navBar{
+    display: flex;
+    padding-right: 2.5rem;
+    gap: 1.25rem;
+}
+.navBar a{
+    color: rgba(77, 52, 102, 1);
+    font-size: 1rem;
+}
+nav #toggle, nav label{
+    display: none;
+}
+.mainIndex{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.bannerIndex{
+    background-image: url("../assets/images/madejas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height:36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.bannerIndex h1{
+    color: white;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: rgba(173, 173, 173, 0.178);
+    width: 35rem;
+    text-align: center;
+    padding: 1.25rem;
+}
+.bannerIndex h1 span{
+    color:blanchedalmond;
+    font-weight: 700;
+}
+.bannerIndex h2{
+    all: initial;
+    text-align: center;
+    background-color: rgb(175, 175, 175);
+    width: 10rem;
+    text-align: center;
+    padding:18px;
+    border: 1px solid rgba(13, 13, 13, 0.048);
+    border-radius: 1.5625rem;
+    color: rgb(15, 15, 15);
+    font-size: 1.5rem;
+    letter-spacing: 0,.1rem;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.26);
+}
+.indexSection{
+    background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
+    border-radius: 542.4px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.indexSection img{
+    height: 6rem; 
+}
+.productosDestacados h2 {
+    color: #A15C82;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: .625rem;
+}
+.productosDestacados ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px;
+}
+.productosDestacados ul li a img{
+    width: 15rem;
+}
+.ofertas{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+    padding-bottom: 45px;
+}
+.ofertas ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ofertas ul li a img{
+    width: 15rem;
+}
+.indexSection h3{
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-size: 2.15rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.indexSection span{
+    text-decoration-line: underline;
+}
+.whatsapp{
+    position:fixed;
+    bottom:5px;
+    margin: 1rem;
+    right:2px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: #A3AEBE;
+    text-align: center;
+    width: 100%;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer ul li{
+    padding: .625rem;
+}
+footer img{
+    height: 6rem;
+}
+.socialMedia img{
+    height: 3rem;
+}
+.mainNosotros{
+    background: #FFE9E9;
+}
+.bannerNosotros{
+    background-image: url("../assets/images/sobre-nosotro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bannerNosotros h1{
+    color: rgba(77, 52, 102, 1);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: rgba(173, 173, 173, 0.50);
+    width: 35rem;
+    text-align: center;
+    padding: 1.25rem;
+}
+.sobreNosotros{
+    display:grid;
+    justify-content: center;
+    justify-items:center;
+    grid-template-columns: repeat(2,50%);
+    gap:30px;
+    padding-bottom: 6rem;
+    margin: 0 4.6em;
+}
+.sobreNosotros img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sobreNosotros h2{
+    padding:5%;
+    grid-column:1/3;
+    grid-row:1/2;
+    color: #A15C82;
+    text-align: center;
+    font-size: 3rem;
+}
+.sobreNosotros p{
+    text-align: justify;
+}
+.sobreNosotros article:nth-child(2){
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+.sobreNosotros article:nth-child(1){
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+.sobreNosotros article:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.sobreNosotros article:nth-child(4){
+    grid-column: 2/3;
+    grid-row:3/4;
+}
+.bannerCatalogo{
+        background-image: url("../assets/images/banner-catalogo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:20px;
+}
+.carousel-inner{
+    padding: 1em;
+}
+.cards-wrapper .card{
+    width:calc(100%/3);
+    margin:0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    max-height: 15rem;
+}
+.cards-wrapper .card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.catalogoCard{
+    display: flex;
+    margin-bottom: 3em;
+}
+.cardContainer .card{
+    margin:0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    max-height: 15rem;
+}
+.cardContainer .card div{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+}
+.cardContainer .card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 500ms ease-out;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.textoHover{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(250, 103, 159, 0.404);
+    transition: all 500ms ease-out;
+    opacity:0;
+    visibility: hidden;
+    text-align: center;
+}
+.textoHover a{
+    color:rgb(70, 4, 64);
+}
+.cardContainer .card:hover > .textoHover{
+    opacity: 1;
+    visibility: visible;
+}
+.cardContainer .card:hover > .textoHover h3{ 
+    margin-top:60px;
+    margin-bottom: 15px;
+}
+.mainContact{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.25rem;
+}
+.contactDatos{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap:10px;
+}
+.contactDatos img{
+    width: 18.75rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.producto{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+.space{
+    background-color: rgba(217, 217, 217, 1);
+    width: 100%;
+    height:2em;
+}
+@media (max-width:768px){
+    header{
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logoPrincipal{
+        margin-left: 0px;
+    }
+    .nav-wrapper nav{
+        flex-direction: column;
+    }
+    .nav-wrapper nav .menu{
+        margin-top: 160px;
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav-wrapper nav .navBar{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0rem;
+        border-radius: 40px 40px 452px 452px;
+        background: rgba(196, 210, 229, 0.67);
+        height: 12.5rem;
+    }
+    .nav-wrapper nav label{
+        display: flex;
+        justify-content: center;
+        color: rgba(77, 52, 102, 1);
+        cursor: pointer;
+        background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
+        border-radius: 542.4px;
+        width: 100%;
+    }
+    nav #toggle:checked ~ .menu{
+        height:auto;
+    }
+    .mainIndex h1, .bannerIndex h2{
+        display: none;
+    }
+    .indexSection img{
+        height: 3rem; 
+    }
+    .productosDestacados h2 {
+        color: #A15C82;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: .625rem;
+    }
+    .productosDestacados ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 45px;
+    }
+    .ofertas ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .ofertas ul li a img{
+        width: 15rem;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    footer ul li{
+        padding: .625rem;
+    }
+    footer img{
+        height: 4rem;
+    }
+    .socialMedia img{
+        height: 3rem;
+    }
+    .bannerNosotros h1{
+        color: rgba(77, 52, 102, 1);
+        font-size: 2rem;
+        width: 25rem;
+        padding: 1.25rem;
+    }
+    .sobreNosotros h2{
+        font-size: 2rem;
+    }
+    .sobreNosotros p{
+        font-size: .75rem;
+    }
+}
+@media (max-width:425px){
+    .sobreNosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .bannerNosotros h1{
+        color: rgba(77, 52, 102, 1);
+        font-size: 1.6rem;
+        width: 15rem;
+        padding: 1.25rem;
+    }
+    .sobreNosotros h2{
+        font-size: 1rem;
+    }
+    .ofertas h3{
+        font-size:0.75rem;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    .menuFooter, .footerImg{
+        display:none;
+    }
+    footer nav{
+        display:flex;
+    }
+    .socialMedia ul{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+    .socialMedia img{
+        height:1.5em;
+    }
+    .whatsapp{
+        height:2em;
+        bottom: 20px;
+    }
+    .mainContact{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+} 
