@@ -1,0 +1,50 @@
+@media (max-width:425px){
+    
+    .bannerNosotros{ 
+        h1{
+        color: rgba(77, 52, 102, 1);
+        font-size: 1.6rem;
+        width: 15rem;
+        padding: 1.25rem;
+       }
+    }
+    .sobreNosotros{
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 1rem;
+        }
+    }     
+    .ofertas h3{
+        font-size:0.75rem;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        .menuFooter, .footerImg{
+            display:none;
+        }
+        .socialMedia{
+            display:flex;
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+                a{
+                    img{
+                        height:1.5em;
+                    }
+                }
+            }
+        }
+    }
+    .whatsapp{
+        height:2em;
+        bottom: 20px;
+    }
+    .mainContact{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+} 

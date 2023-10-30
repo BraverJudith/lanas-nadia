@@ -351,6 +351,148 @@ footer div nav ul li a img {
   height: 2em;
 }
 
+@media (max-width: 768px) {
+  header {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  header nav .logoPrincipal {
+    margin-left: 0px;
+  }
+  header nav #toggle:checked ~ .menu {
+    height: auto;
+  }
+  header nav label {
+    display: flex;
+    justify-content: center;
+    color: rgb(77, 52, 102);
+    cursor: pointer;
+    background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
+    border-radius: 542.4px;
+    width: 100%;
+  }
+  header nav .menu {
+    margin-top: 160px;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+  }
+  header nav .menu .navBar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    border-radius: 40px 40px 452px 452px;
+    background: rgba(196, 210, 229, 0.67);
+    height: 12.5rem;
+  }
+  .mainIndex h1, .bannerIndex h2 {
+    display: none;
+  }
+  .indexSection img {
+    height: 3rem;
+  }
+  .productosDestacados h2 {
+    color: #A15C82;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.625rem;
+  }
+  .productosDestacados ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 45px;
+  }
+  .ofertas ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .ofertas ul li a img {
+    width: 15rem;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  footer div img {
+    height: 4rem;
+  }
+  footer div ul li {
+    padding: 0.625rem;
+  }
+  footer div ul li img {
+    height: 3rem;
+  }
+  .bannerNosotros h1 {
+    color: rgb(77, 52, 102);
+    font-size: 2rem;
+    width: 25rem;
+    padding: 1.25rem;
+  }
+  .sobreNosotros h2 {
+    font-size: 2rem;
+  }
+  .sobreNosotros p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 425px) {
+  .bannerNosotros h1 {
+    color: rgb(77, 52, 102);
+    font-size: 1.6rem;
+    width: 15rem;
+    padding: 1.25rem;
+  }
+  .sobreNosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .sobreNosotros h2 {
+    font-size: 1rem;
+  }
+  .ofertas h3 {
+    font-size: 0.75rem;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .menuFooter, footer .footerImg {
+    display: none;
+  }
+  footer .socialMedia {
+    display: flex;
+  }
+  footer .socialMedia ul {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  footer .socialMedia ul a img {
+    height: 1.5em;
+  }
+  .whatsapp {
+    height: 2em;
+    bottom: 20px;
+  }
+  .mainContact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
 .whatsapp {
   position: fixed;
   bottom: 5px;

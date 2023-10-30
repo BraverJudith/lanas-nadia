@@ -1,6 +1,8 @@
 @import "./base/reset";
 @import "./base/fonts";
 
+@import "./utilities/mixins";
+
 @import "./layout/body";
 @import "./layout/header";
 @import "./layout/footer";
@@ -9,7 +11,10 @@
 @import "./layout/mainCatalogo";
 @import "./layout/mainContacto";
 @import "./layout/mainProduct";
+@import "./layout/media/mediaMax768";
+@import "./layout/media/mediaMax425";
 
 @import "./components/whatsapp";
 @import "./components/barra";
 @import "./components/bootstrap";
+
