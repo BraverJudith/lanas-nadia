@@ -12,6 +12,9 @@
             }
             #toggle:checked ~ .menu{
                 height:auto;
+                &:checked ~ .bannerNosotros h1 {
+                    display: none;
+                }
             }
             label{
                 display: flex;
@@ -24,6 +27,7 @@
             }
             .menu{
                 margin-top: 160px;
+                margin-left: 0rem;
                 position: absolute;
                 height: 0;
                 overflow: hidden;
@@ -85,20 +89,23 @@
             }
         }
     }
-    .bannerNosotros {
-        h1{
-            color: rgba(77, 52, 102, 1);
-            font-size: 2rem;
-            width: 25rem;
-            padding: 1.25rem;
+    .mainNosotros{
+        .bannerNosotros {
+            h1{
+                color: rgba(77, 52, 102, 1);
+                font-size: 2rem;
+                width: 25rem;
+                padding: 1.25rem;
+            }
         }
-    }
-    .sobreNosotros{
-        h2{
-            font-size: 2rem;
-        }
-       p{
-        font-size: .75rem;
+        .sobreNosotros{
+            margin: 0 5em;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+            font-size: .75rem;
+            }
         }
     }
 }
