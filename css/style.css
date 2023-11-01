@@ -13,6 +13,57 @@ li {
   list-style: none;
 }
 
+.whatsapp {
+  position: fixed;
+  bottom: 5px;
+  margin: 1rem;
+  right: 2px;
+}
+
+.indexSection {
+  background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
+  border-radius: 542.4px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.indexSection img {
+  height: 6rem;
+}
+
+#carousel {
+  margin: 30px;
+}
+#carousel .cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+#carousel .cards-wrapper .card {
+  width: 33.3333333333%;
+  margin: 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  max-height: 15rem;
+}
+#carousel .cards-wrapper .card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#carousel .carousel-control-prev,
+#carousel .carousel-control-next {
+  background-color: #5f2f56;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: bisque;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -325,6 +376,11 @@ footer div nav ul li a img {
   align-items: center;
   justify-content: space-around;
 }
+.contacto .mainContact .formulario section article form div .btn {
+  background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
+  border-radius: 542.4px;
+  padding: 0.5rem;
+}
 
 .mainProduct .producto {
   display: grid;
@@ -351,9 +407,9 @@ footer div nav ul li a img {
   height: 2em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 929px) {
   header {
-    height: 7rem;
+    height: 10rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -364,11 +420,22 @@ footer div nav ul li a img {
   header nav .logoPrincipal {
     margin-left: 0px;
   }
+  header nav .menu {
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+  }
   header nav #toggle:checked ~ .menu {
     height: auto;
-  }
-  header nav #toggle:checked ~ .menu:checked ~ .bannerNosotros h1 {
-    display: none;
   }
   header nav label {
     display: flex;
@@ -381,7 +448,6 @@ footer div nav ul li a img {
   }
   header nav .menu {
     margin-top: 160px;
-    margin-left: 0rem;
     position: absolute;
     height: 0;
     overflow: hidden;
@@ -394,32 +460,50 @@ footer div nav ul li a img {
     background: rgba(196, 210, 229, 0.67);
     height: 12.5rem;
   }
-  .mainIndex h1, .bannerIndex h2 {
+  .mainIndex .bannerIndex h1, .mainIndex .bannerIndex h2 {
     display: none;
   }
-  .indexSection img {
-    height: 3rem;
-  }
-  .productosDestacados h2 {
+  .mainIndex .productosDestacados h2 {
     color: #A15C82;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0.625rem;
   }
-  .productosDestacados ul {
+  .mainIndex .productosDestacados ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 45px;
   }
-  .ofertas ul {
+  .mainIndex .ofertas ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  .ofertas ul li a img {
+  .mainIndex .ofertas ul li a img {
     width: 15rem;
+  }
+  .indexSection img {
+    height: 3rem;
+  }
+  .mainNosotros .bannerNosotros h1 {
+    font-size: 2rem;
+    width: 25rem;
+    padding: 1.25rem;
+  }
+  .mainNosotros .sobreNosotros {
+    margin: 0 5em;
+  }
+  .mainNosotros .sobreNosotros h2 {
+    font-size: 2rem;
+  }
+  .mainNosotros .sobreNosotros p {
+    font-size: 0.75rem;
+  }
+  .contacto .mainContact {
+    grid-template-columns: 100%;
+    gap: 1.25rem;
   }
   footer {
     display: flex;
@@ -438,21 +522,6 @@ footer div nav ul li a img {
   }
   footer div ul li img {
     height: 3rem;
-  }
-  .mainNosotros .bannerNosotros h1 {
-    color: rgb(77, 52, 102);
-    font-size: 2rem;
-    width: 25rem;
-    padding: 1.25rem;
-  }
-  .mainNosotros .sobreNosotros {
-    margin: 0 5em;
-  }
-  .mainNosotros .sobreNosotros h2 {
-    font-size: 2rem;
-  }
-  .mainNosotros .sobreNosotros p {
-    font-size: 0.75rem;
   }
 }
 @media (max-width: 425px) {
@@ -489,7 +558,11 @@ footer div nav ul li a img {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-  .ofertas .indexSection h3 {
+  .mainIndex .productosDestacados {
+    gap: 0;
+    padding: 23px 0px;
+  }
+  .mainIndex .ofertas .indexSection h3 {
     font-size: 0.75rem;
   }
   footer {
@@ -519,56 +592,6 @@ footer div nav ul li a img {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
-}
-.whatsapp {
-  position: fixed;
-  bottom: 5px;
-  margin: 1rem;
-  right: 2px;
-}
-
-.indexSection {
-  background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
-  border-radius: 542.4px;
-  width: 100%;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.indexSection img {
-  height: 6rem;
-}
-
-#carousel {
-  margin: 30px;
-}
-#carousel .cards-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 20px;
-}
-#carousel .cards-wrapper .card {
-  width: 33.3333333333%;
-  margin: 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
-  max-height: 15rem;
-}
-#carousel .cards-wrapper .card img {
-  max-width: 100%;
-  max-height: 100%;
-}
-#carousel .carousel-control-prev,
-#carousel .carousel-control-next {
-  background-color: #5f2f56;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  color: bisque;
 }
 
 /*# sourceMappingURL=style.css.map */

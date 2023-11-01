@@ -35,11 +35,17 @@
                 grid-row:5/6;
             }
         }
-    }     
-    .ofertas {
-        .indexSection{
-            h3{
-            font-size:0.75rem;}
+    } 
+    .mainIndex{
+        .productosDestacados{
+            gap: 0;
+            padding: 23px 0px;
+        }    
+        .ofertas {
+            .indexSection{
+                h3{
+                font-size:0.75rem;}
+            }
         }
     }
     footer {

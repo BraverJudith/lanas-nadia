@@ -7,14 +7,9 @@
         flex-direction: column;
         nav{
             flex-direction: column;
-            .logoPrincipal{
-                margin-left: 0px;
-            }
-            #toggle:checked ~ .menu{
-                height:auto;
-                &:checked ~ .bannerNosotros h1 {
-                    display: none;
-                }
+            #toggle{
+                    &:checked ~ .menu{
+                    height:auto;}
             }
             label{
                 display: flex;
@@ -27,7 +22,6 @@
             }
             .menu{
                 margin-top: 160px;
-                margin-left: 0rem;
                 position: absolute;
                 height: 0;
                 overflow: hidden;
@@ -42,36 +36,64 @@
             }
         }
     }
-    .mainIndex h1, .bannerIndex h2{
-        display: none;
+    .mainIndex{
+        .bannerIndex {
+            h1,h2{
+                display: none;
+                }
+        }
+        .productosDestacados {
+            h2 {
+                color: #A15C82;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding: .625rem;
+            }
+            ul{
+                @include mediaFlex;
+                padding: 45px;
+            }
+        }
+        .ofertas {
+            ul{
+                @include mediaFlex;
+                li {
+                    a {
+                    img{width: 15rem;}
+                    }
+                }
+            } 
+        }
     }
     .indexSection {
         img{
             height: 3rem; 
         }
     }
-    .productosDestacados {
-        h2 {
-            color: #A15C82;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            padding: .625rem;
+    .mainNosotros{
+        .bannerNosotros {
+            h1{
+                font-size: 2rem;
+                width: 25rem;
+                padding: 1.25rem;
+            }
         }
-        ul{
-            @include mediaFlex;
-            padding: 45px;
+        .sobreNosotros{
+            margin: 0 5em;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+            font-size: .75rem;
+            }
         }
     }
-    .ofertas {
-        ul{
-            @include mediaFlex;
-            li {
-                a {
-                   img{width: 15rem;}
-                }
-            }
-        } 
+    .contacto{
+        .mainContact{
+            grid-template-columns: 100%;
+            gap: 1.25rem;
+        }
     }
     footer{
         display: flex;
@@ -89,23 +111,5 @@
             }
         }
     }
-    .mainNosotros{
-        .bannerNosotros {
-            h1{
-                color: rgba(77, 52, 102, 1);
-                font-size: 2rem;
-                width: 25rem;
-                padding: 1.25rem;
-            }
-        }
-        .sobreNosotros{
-            margin: 0 5em;
-            h2{
-                font-size: 2rem;
-            }
-            p{
-            font-size: .75rem;
-            }
-        }
-    }
+    
 }
