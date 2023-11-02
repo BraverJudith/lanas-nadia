@@ -25,7 +25,7 @@ header{
             display: none;
         }
         label{
-            display:none;
+            @extend #toggle;
         }
         div{
             ul{

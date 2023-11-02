@@ -96,10 +96,7 @@ header nav div {
 header nav div a img {
   height: 7.5rem;
 }
-header nav #toggle {
-  display: none;
-}
-header nav label {
+header nav #toggle, header nav label {
   display: none;
 }
 header nav div ul {
@@ -149,6 +146,7 @@ footer div nav ul li a img {
   height: 36rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
@@ -354,22 +352,17 @@ footer div nav ul li a img {
   grid-template-columns: 1fr 2fr;
   gap: 1.25rem;
 }
-.contacto .mainContact .contactDatos {
+.contacto .mainContact .contactDatos, .contacto .mainContact .formulario {
   display: flex;
   flex-direction: column;
-  padding: 1em;
-  gap: 10px;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
-}
-.contacto .mainContact .contactDatos img {
-  width: 18.75rem;
-}
-.contacto .mainContact .formulario {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
   align-items: center;
+  gap: 10px;
+  padding: 1em;
+}
+.contacto .mainContact .contactDatos img, .contacto .mainContact .formulario img {
+  width: 18.75rem;
 }
 .contacto .mainContact .formulario section article form div {
   display: flex;
@@ -393,10 +386,11 @@ footer div nav ul li a img {
 }
 .mainProduct .producto section {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .mainProduct .producto section img {
   width: 30em;
@@ -434,7 +428,7 @@ footer div nav ul li a img {
   header nav {
     flex-direction: column;
   }
-  header nav #toggle:checked ~ .menu {
+  header nav #toggle:checked ~ .menu, header nav label:checked ~ .menu {
     height: auto;
   }
   header nav label {
@@ -464,17 +458,13 @@ footer div nav ul li a img {
     display: none;
   }
   .mainIndex .productosDestacados h2 {
-    color: #A15C82;
-    text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 0.625rem;
   }
   .mainIndex .productosDestacados ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 45px;
   }
   .mainIndex .ofertas ul {
     display: flex;
@@ -508,6 +498,7 @@ footer div nav ul li a img {
   footer {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   footer div {
     display: flex;
@@ -522,6 +513,20 @@ footer div nav ul li a img {
   }
   footer div ul li img {
     height: 3rem;
+  }
+  .mainProduct .producto {
+    grid-template-columns: 2fr 2fr;
+    margin-top: 10rem;
+    gap: 20px;
+  }
+  .mainProduct .producto section img {
+    width: 15em;
+  }
+  .mainProduct .producto section h2 {
+    font-size: 1rem;
+  }
+  .mainProduct .producto section p {
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 425px) {
@@ -591,6 +596,12 @@ footer div nav ul li a img {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.25rem;
+  }
+  .mainProduct .producto {
+    grid-template-columns: 100%;
+  }
+  .mainProduct .producto .fotoProducto img {
+    width: 15em;
   }
 }
 

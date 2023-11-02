@@ -44,15 +44,11 @@
         }
         .productosDestacados {
             h2 {
-                color: #A15C82;
-                text-align: center;
                 font-size: 1.5rem;
                 font-weight: 700;
-                padding: .625rem;
             }
             ul{
                 @include mediaFlex;
-                padding: 45px;
             }
         }
         .ofertas {
@@ -96,8 +92,7 @@
         }
     }
     footer{
-        display: flex;
-        justify-content: space-evenly;
+        @include mediaFlex;
         div{
             @include mediaFlex;
             img{
@@ -107,6 +102,24 @@
                 padding: .625rem;
                 img{
                     height: 3rem;
+                }
+            }
+        }
+    }
+    .mainProduct{
+        .producto{
+            grid-template-columns: 2fr 2fr;
+            margin-top: 10rem;
+            gap:20px;
+            section{
+                img {
+                    width:15em;
+                }
+                h2{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 0.75rem;
                 }
             }
         }

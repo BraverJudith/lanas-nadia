@@ -1,7 +1,10 @@
+@import "./utilities/mixins";
+@import "./utilities/maps";
+@import "./utilities/variables";
+
+
 @import "./base/reset";
 @import "./base/fonts";
-
-@import "./utilities/mixins";
 
 @import "./components/whatsapp";
 @import "./components/barra";

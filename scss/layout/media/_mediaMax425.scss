@@ -77,4 +77,14 @@
         grid-template-columns: 1fr;
         gap: 1.25rem;
     }
+    .mainProduct{
+        .producto{
+            grid-template-columns: 100%;
+            .fotoProducto{
+                img {
+                    width:15em;
+                }
+            }
+        }
+    }
 } 

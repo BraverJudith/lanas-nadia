@@ -1,0 +1,6 @@
+$backgroud-color:map-get($map: $color, $key:rosaclaro);
+$backgroud-color-header:rgba(196, 210, 229, 0.67);
+$backgroud-color-footer:map-get($map: $color, $key:gris);
+$backgroud-color-btn:linear-gradient(180deg, #D19696 8.85%, #929292 100%);
+$link-color: map-get($map: $color, $key:violeta);
+$font-color-index:map-get($map: $color, $key:rosaoscuro);
