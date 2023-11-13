@@ -198,6 +198,7 @@ footer div nav ul li a img {
 }
 .mainIndex div ul li a img {
   width: 15rem;
+  height: 15rem;
 }
 .mainIndex div {
   background-color: #000;
@@ -224,7 +225,7 @@ footer div nav ul li a img {
   background: #FFE9E9;
 }
 .mainNosotros .bannerNosotros {
-  background-image: url("../assets/images/sobre-nosotro.jpg");
+  background-image: url("../assets/images/sobre-nosotros.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -289,7 +290,7 @@ footer div nav ul li a img {
 }
 
 .bannerCatalogo {
-  background-image: url("../assets/images/banner-catalogo.jpg");
+  background-image: url("../assets/images/sobre-nosotros.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
