@@ -6,7 +6,6 @@ Lanas Nadia es una página de venta de lanas en línea. Este proyecto fue desarr
 
 ![Logo](./assets/images/logo.png)
 
-./assets/images/logo.png
 ## Authors
 
 - [@BraverJudith](https://github.com/BraverJudith)
