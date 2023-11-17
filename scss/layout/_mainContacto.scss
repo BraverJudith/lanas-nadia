@@ -7,6 +7,9 @@
         .contactDatos{
             @include flex(column,nowrap,center,center,10px);
             padding: 1em;
+            p{
+                text-align: center;
+            }
             img{
                 width: 18.75rem;
             }
@@ -16,6 +19,27 @@
             section{
                 article{
                     form{
+                        input{
+                            border-radius: 15px;
+                            height: 1.8rem;
+                            width:19rem;
+                            &::placeholder{
+                                text-align: center;
+                                color: black;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+                        }
+                        textarea{
+                            @extend input;
+                            height: 18rem;
+                            width: 19rem;
+                            resize: none;
+                            &::placeholder{
+                                text-align: center;
+                                color: black;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+                        }
                         div{
                             display: flex;
                             align-items: center;
@@ -23,7 +47,9 @@
                             .btn{
                                 background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
                                 border-radius: 542.4px;
-                                padding: 0.5rem;
+                                text-align: center;
+                                height: 1.6rem;
+                                width:6rem;
                             }
                         }
                     }

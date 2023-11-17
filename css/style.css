@@ -362,8 +362,31 @@ footer div nav ul li a img {
   gap: 10px;
   padding: 1em;
 }
+.contacto .mainContact .contactDatos p, .contacto .mainContact .formulario p {
+  text-align: center;
+}
 .contacto .mainContact .contactDatos img, .contacto .mainContact .formulario img {
   width: 18.75rem;
+}
+.contacto .mainContact .formulario section article form input, .contacto .mainContact .formulario section article form textarea {
+  border-radius: 15px;
+  height: 1.8rem;
+  width: 19rem;
+}
+.contacto .mainContact .formulario section article form input::placeholder, .contacto .mainContact .formulario section article form textarea::placeholder {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.contacto .mainContact .formulario section article form textarea {
+  height: 18rem;
+  width: 19rem;
+  resize: none;
+}
+.contacto .mainContact .formulario section article form textarea::placeholder {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .contacto .mainContact .formulario section article form div {
   display: flex;
@@ -373,7 +396,9 @@ footer div nav ul li a img {
 .contacto .mainContact .formulario section article form div .btn {
   background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
   border-radius: 542.4px;
-  padding: 0.5rem;
+  text-align: center;
+  height: 1.6rem;
+  width: 6rem;
 }
 
 .mainProduct .producto {
@@ -402,6 +427,73 @@ footer div nav ul li a img {
   height: 2em;
 }
 
+.page {
+  background-color: white;
+}
+.page .numeros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10rem 0rem 6rem;
+}
+.page .numeros img {
+  height: 10rem;
+}
+.page .numeros .cero {
+  -webkit-animation: rotate-scale-up 5s linear infinite both;
+  animation: rotate-scale-up 5s linear infinite both;
+}
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+.page div {
+  text-align: center;
+}
+.page div h2 {
+  font-size: 3.7rem;
+  color: #da5a81;
+}
+.page .letras {
+  margin-top: 6rem;
+}
+.page .letras img {
+  height: 15rem;
+}
+
+@media (max-width: 960px) {
+  .mainIndex div ul li a img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
 @media (max-width: 929px) {
   header {
     height: 10rem;
@@ -440,6 +532,7 @@ footer div nav ul li a img {
     background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
     border-radius: 542.4px;
     width: 100%;
+    margin-top: 0.625rem;
   }
   header nav .menu {
     margin-top: 160px;
@@ -454,6 +547,7 @@ footer div nav ul li a img {
     border-radius: 40px 40px 452px 452px;
     background: rgba(196, 210, 229, 0.67);
     height: 12.5rem;
+    margin-top: 0.625rem;
   }
   .mainIndex .bannerIndex h1, .mainIndex .bannerIndex h2 {
     display: none;
@@ -467,6 +561,9 @@ footer div nav ul li a img {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
+  .mainIndex .productosDestacados ul li a img {
+    width: 15rem;
+  }
   .mainIndex .ofertas ul {
     display: flex;
     justify-content: space-evenly;
@@ -477,6 +574,9 @@ footer div nav ul li a img {
   }
   .indexSection img {
     height: 3rem;
+  }
+  .mainNosotros .bannerNosotros {
+    padding-top: 18rem;
   }
   .mainNosotros .bannerNosotros h1 {
     font-size: 2rem;
@@ -528,6 +628,9 @@ footer div nav ul li a img {
   }
   .mainProduct .producto section p {
     font-size: 0.75rem;
+  }
+  .page .numeros {
+    margin: 20rem 0rem 6rem;
   }
 }
 @media (max-width: 425px) {
@@ -603,6 +706,18 @@ footer div nav ul li a img {
   }
   .mainProduct .producto .fotoProducto img {
     width: 15em;
+  }
+  .contacto section h1 {
+    font-size: 1.25rem;
+  }
+  .page .numeros {
+    margin: 12rem 0rem 6rem;
+  }
+  .page .numeros img {
+    height: 5rem;
+  }
+  .page div h2 {
+    font-size: 2rem;
   }
 }
 

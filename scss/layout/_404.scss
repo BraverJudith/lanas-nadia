@@ -1,0 +1,55 @@
+.page{
+    background-color: white;
+    .numeros{
+        @include flex(row,nowrap,center,center,10px);
+        margin: 10rem 0rem 6rem;
+        img{
+            height: 10rem;
+        }
+        .cero{
+                -webkit-animation: rotate-scale-up 5s linear infinite both;
+                        animation: rotate-scale-up 5s linear infinite both;
+            }
+        @-webkit-keyframes rotate-scale-up {
+            0% {
+            -webkit-transform: scale(1) rotateZ(0);
+                    transform: scale(1) rotateZ(0);
+            }
+            50% {
+            -webkit-transform: scale(2) rotateZ(180deg);
+                    transform: scale(2) rotateZ(180deg);
+            }
+            100% {
+            -webkit-transform: scale(1) rotateZ(360deg);
+                    transform: scale(1) rotateZ(360deg);
+            }
+        }
+        @keyframes rotate-scale-up {
+            0% {
+            -webkit-transform: scale(1) rotateZ(0);
+                    transform: scale(1) rotateZ(0);
+            }
+            50% {
+            -webkit-transform: scale(2) rotateZ(180deg);
+                    transform: scale(2) rotateZ(180deg);
+            }
+            100% {
+            -webkit-transform: scale(1) rotateZ(360deg);
+                    transform: scale(1) rotateZ(360deg);
+            }
+        }
+    }
+    div{
+        text-align: center;
+        h2{
+            font-size: 3.7rem;
+            color:map-get($map: $color, $key:rosaovillo);
+        }
+    }
+    .letras{
+        margin-top: 6rem;
+        img{
+            height: 15rem;
+        }
+    }
+}

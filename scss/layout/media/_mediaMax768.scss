@@ -19,6 +19,7 @@
                 background: linear-gradient(180deg, #D19696 8.85%, #929292 100%);
                 border-radius: 542.4px;
                 width: 100%;
+                margin-top: .625rem;
             }
             .menu{
                 margin-top: 160px;
@@ -32,6 +33,7 @@
                     border-radius: 40px 40px 452px 452px;
                     background: rgba(196, 210, 229, 0.67);
                     height: 12.5rem;
+                    margin-top: .625rem;
                 }
             }
         }
@@ -49,6 +51,11 @@
             }
             ul{
                 @include mediaFlex;
+                li{
+                    a {
+                        img{width: 15rem;}
+                    }
+                }
             }
         }
         .ofertas {
@@ -69,6 +76,7 @@
     }
     .mainNosotros{
         .bannerNosotros {
+            padding-top: 18rem;
             h1{
                 font-size: 2rem;
                 width: 25rem;
@@ -122,6 +130,11 @@
                     font-size: 0.75rem;
                 }
             }
+        }
+    }
+    .page{
+        .numeros{
+            margin: 20rem 0rem 6rem;
         }
     }
     
